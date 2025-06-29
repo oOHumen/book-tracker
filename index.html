@@ -21,7 +21,21 @@
         <h2>Ласкаво просимо!</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora laboriosam nihil dolorum explicabo, repudiandae rerum ducimus? Cum ab cumque distinctio deleniti, voluptas perspiciatis voluptates animi natus? Eius, quae velit!</p>
         <section class="add-book-form" >
-            
+            <form action="">
+                <label for="bookname">Назва книги</label>
+                <input type="text" id="bookname"><br>
+                <label for="bookauthor">Автор</label>
+                <input type="text" id="bookauthor"><br>
+                <label for="bookdescription">Опис</label>
+                <textarea name="bookdescription" id="" placeholder="Короткий опис книги"></textarea><br>
+                <label for="status">Статус</label>
+                <select name="status" id="status">
+                    <option value="reading">Читаю</option>
+                    <option value="read">Прочитав</option>
+                    <option value="willread">Хочу прочитати</option>
+                </select><br>
+                <button type="submit">Додати</button>
+            </form>
         </section>
     </main>
     <footer>

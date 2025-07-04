@@ -11,7 +11,7 @@
         <h1>📚 BookTracker</h1>
         <nav>
             <ul>
-                <li><a  href="url">Головна</a></li>
+                <li><a  href="index.html">Головна</a></li>
                 <li><a  href="url">Мої книги</a></li>
                 <li><a  href="url">Про проєкт</a></li>
             </ul>
@@ -24,7 +24,7 @@
             <form action="">
                 <div class="form-group">
                     <label for="bookname">Книга</label>
-                    <input type="text" id="bookname" placeholder="Есетціалізм">
+                    <input type="text" id="bookname" placeholder="Есенціалізм">
                 </div>
                 <div class="form-group">
                     <label for="bookauthor">Автор</label>
@@ -32,11 +32,11 @@
                 </div>
                 <div class="form-group">
                     <label for="bookdescription">Опис</label>
-                    <textarea name="bookdescription" rows ='3' placeholder="Короткий опис книги"></textarea>
+                    <textarea id="bookdescription" name="bookdescription" rows ='3' placeholder="Короткий опис книги"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="status">Статус</label>
-                    <select name="status" id="status">
+                    <label for="bookstatus">Статус</label>
+                    <select name="bookstatus" id="bookstatus">
                         <option value="reading">Читаю</option>
                         <option value="read">Прочитав</option>
                         <option value="willread">Хочу прочитати</option>
@@ -49,5 +49,6 @@
     <footer>
         <p>© 2025 BookTracker</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

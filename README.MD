@@ -1,3 +1,5 @@
-git clone ...
-npm install
-npm run build
+`git clone ...`
+
+`npm install`
+
+`npm run build`

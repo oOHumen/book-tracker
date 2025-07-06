@@ -1,54 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script type="module" src="assets/js/script.js" defer></script>
-    <title>📚 BookTracker</title>
-</head>
-<body>
-    <header>
-        <h1>📚 BookTracker</h1>
-        <nav>
-            <ul>
-                <li><a  href="index.html">Головна</a></li>
-                <li><a  href="my-books.html">Мої книги</a></li>
-                <li><a  href="url">Про проєкт</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Ласкаво просимо!</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora laboriosam nihil dolorum explicabo, repudiandae rerum ducimus? Cum ab cumque distinctio deleniti, voluptas perspiciatis voluptates animi natus? Eius, quae velit!</p>
-        <section class="add-book-form" >
-            <form action="">
-                <div class="form-group">
-                    <label for="bookname">Книга</label>
-                    <input type="text" id="bookname" placeholder="Есенціалізм">
-                </div>
-                <div class="form-group">
-                    <label for="bookauthor">Автор</label>
-                    <input type="text" id="bookauthor" placeholder="Грег Маккеон">
-                </div>
-                <div class="form-group">
-                    <label for="bookdescription">Опис</label>
-                    <textarea id="bookdescription" name="bookdescription" rows ='3' placeholder="Короткий опис книги"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="bookstatus">Статус</label>
-                    <select name="bookstatus" id="bookstatus">
-                        <option value="reading">Читаю</option>
-                        <option value="read">Прочитав</option>
-                        <option value="willread">Хочу прочитати</option>
-                    </select>
-                </div>
-                <button type="submit">Додати</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 BookTracker</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script type="module" src="assets/js/script.js" defer></script>
+        <title>📚 BookTracker</title>
+    </head>
+    <body>
+        <header>
+            <h1>📚 BookTracker</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="my-books.html">Мої книги</a></li>
+                    <li><a href="url">Про проєкт</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Ласкаво просимо!</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora laboriosam
+                nihil dolorum explicabo, repudiandae rerum ducimus? Cum ab cumque distinctio
+                deleniti, voluptas perspiciatis voluptates animi natus? Eius, quae velit!
+            </p>
+            <section class="add-book-form">
+                <form action="">
+                    <div class="form-group">
+                        <label for="bookname">Книга</label>
+                        <input type="text" id="bookname" placeholder="Есенціалізм" />
+                    </div>
+                    <div class="form-group">
+                        <label for="bookauthor">Автор</label>
+                        <input type="text" id="bookauthor" placeholder="Грег Маккеон" />
+                    </div>
+                    <div class="form-group">
+                        <label for="bookdescription">Опис</label>
+                        <textarea
+                            id="bookdescription"
+                            name="bookdescription"
+                            rows="3"
+                            placeholder="Короткий опис книги"
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookstatus">Статус</label>
+                        <select name="bookstatus" id="bookstatus">
+                            <option value="reading">Читаю</option>
+                            <option value="read">Прочитав</option>
+                            <option value="willread">Хочу прочитати</option>
+                        </select>
+                    </div>
+                    <button type="submit">Додати</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>© 2025 BookTracker</p>
+        </footer>
+    </body>
 </html>

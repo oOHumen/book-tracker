@@ -26,7 +26,7 @@
                 deleniti, voluptas perspiciatis voluptates animi natus? Eius, quae velit!
             </p>
             <section class="add-book-form">
-                <form action="">
+                <form>
                     <div class="form-group">
                         <label for="bookname">Книга</label>
                         <input type="text" id="bookname" placeholder="Есенціалізм" />
@@ -47,9 +47,9 @@
                     <div class="form-group">
                         <label for="bookstatus">Статус</label>
                         <select name="bookstatus" id="bookstatus">
-                            <option>Читаю</option>
-                            <option>Прочитав</option>
-                            <option>Хочу прочитати</option>
+                            <option value="reading">Читаю</option>
+                            <option value="read">Прочитав</option>
+                            <option value="willread">Хочу прочитати</option>
                         </select>
                     </div>
                     <button type="submit">Додати</button>

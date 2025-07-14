@@ -11,15 +11,16 @@ if (bookListContainer) {
         const addBookButton = document.createElement('button');
 
         addBookButton.innerText = 'Додати книгу';
-        addBookButton.onclick = () => (window.location.href = '../index.html');
+        addBookButton.onclick = () => (window.location.href = 'index.html');
         bookListContainer.appendChild(addBookButton);
     } else {
         const booksTable: HTMLTableElement = document.createElement('table');
-
-        booksTable.style.border = '1px solid black';
-        booksTable.style.width = '100%';
-
         const booksTableHeader: HTMLTableRowElement = booksTable.insertRow();
+        const statusMap: Record<string, string> = {
+            reading: 'Читаю',
+            read: 'Прочитав',
+            willread: 'Хочу прочитати',
+        };
 
         ['Книга', 'Автор', 'Опис', 'Статус'].forEach((tableHeader) => {
             const th: HTMLTableCellElement = document.createElement('th');
@@ -30,11 +31,15 @@ if (bookListContainer) {
 
         savedBooks.forEach((book) => {
             const tr = booksTable.insertRow();
+            const removeButton = document.createElement('button') as HTMLButtonElement;
+            removeButton.innerText = 'Видалити';
+            removeButton.onclick = () => {};
 
             tr.insertCell().innerText = book.bookName;
             tr.insertCell().innerText = book.bookauthor;
             tr.insertCell().innerText = book.bookdescription || 'Опис відсутній';
-            tr.insertCell().innerText = book.bookStatus;
+            tr.insertCell().innerText = statusMap[book.bookStatus];
+            tr.insertCell().appendChild(removeButton);
         });
 
         bookListContainer.appendChild(booksTable);

@@ -15,7 +15,7 @@ form.addEventListener('submit', (event) => {
         alert('Будь ласка, заповніть Назву книги та Автора');
     } else {
         const enteredBook: Book = { bookName, bookauthor, bookdescription, bookStatus };
-        const savedBooks: Book[] = JSON.parse(localStorage.getItem('savedBooks')!) || [];
+        const savedBooks: Book[] = JSON.parse(localStorage.getItem('savedBooks') ?? '[]');
         savedBooks.push(enteredBook);
         localStorage.setItem('savedBooks', JSON.stringify(savedBooks));
     }

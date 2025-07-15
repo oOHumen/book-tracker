@@ -1,8 +1,19 @@
+/* 
+color palete
+#DDB707
+#EBE7E3
+#3B3634
+#9C3F1D
+*/
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-image: url(../img/books-1920.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     color: #333;
 }
 

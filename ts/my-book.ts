@@ -22,19 +22,24 @@ if (bookListContainer) {
             willread: 'Хочу прочитати',
         };
 
-        ['Книга', 'Автор', 'Опис', 'Статус'].forEach((tableHeader) => {
+        ['№', 'Книга', 'Автор', 'Опис', 'Статус', 'Дія'].forEach((tableHeader) => {
             const th: HTMLTableCellElement = document.createElement('th');
 
             th.innerText = tableHeader;
             booksTableHeader.appendChild(th);
         });
 
-        savedBooks.forEach((book) => {
+        savedBooks.forEach((book, index) => {
             const tr = booksTable.insertRow();
             const removeButton = document.createElement('button') as HTMLButtonElement;
-            removeButton.innerText = 'Видалити';
-            removeButton.onclick = () => {};
+            removeButton.innerText = 'X';
+            removeButton.onclick = () => {
+                const remainingBooks = savedBooks.filter((_, i) => i != index);
+                localStorage.setItem('savedBooks', JSON.stringify(remainingBooks));
+                location.reload();
+            };
 
+            tr.insertCell().innerText = `${index + 1}`;
             tr.insertCell().innerText = book.bookName;
             tr.insertCell().innerText = book.bookauthor;
             tr.insertCell().innerText = book.bookdescription || 'Опис відсутній';
